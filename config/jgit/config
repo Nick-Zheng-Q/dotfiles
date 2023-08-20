@@ -1,0 +1,6 @@
+[filesystem "Ubuntu|11.0.14.1|drvfs"]
+	timestampResolution = 890 milliseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "N/A|20-internal|/dev/sdc"]
+	timestampResolution = 97759 nanoseconds
+	minRacyThreshold = 15095 microseconds
