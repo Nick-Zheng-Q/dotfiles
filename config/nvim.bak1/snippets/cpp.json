@@ -1,0 +1,42 @@
+{
+  "Create int function": {
+    "prefix": "intfunc",
+    "body": ["int $1 () {", "    int $0;", "    return $0;", "}"],
+    "description": "Creates a function that returns the int type"
+  },
+  "Create float function": {
+    "prefix": "flfunc",
+    "body": ["float $2 () {", "    float $0;", "    return $0;", "}"],
+    "description": "Creates a function that returns the float type"
+  },
+  "Create double function": {
+    "prefix": "doubfunc",
+    "body": ["double $2 () {", "    double $0;", "    return $0;", "}"],
+    "description": "Creates a function that returns the double type"
+  },
+  "Create string function": {
+    "prefix": "strfunc",
+    "body": ["char[] $1 () {", "    char[] $0 = {};", "    return $0;", "}"],
+    "description": "Creates a function that returns the char array type"
+  },
+  "Create long function": {
+    "prefix": "longfunc",
+    "body": ["long $1 () {", "    long $0;", "    return $0;", "}"],
+    "description": "Creates a function that returns the long type"
+  },
+  "Print variable of type float (2 decimal places)": {
+    "prefix": "pflo",
+    "body": ["printf(\"$0 :>> %.2f\\n\", $0);"],
+    "description": "Calls printf() to log value of variable of type float rounded to 2 decimal places"
+  },
+  "Print variable of type integer": {
+    "prefix": "pint",
+    "body": ["printf(\"$0 :>> %d\\n\", $0);"],
+    "description": "Calls printf() to log value of variable of type signed integer"
+  },
+  "For loop": {
+    "prefix": "for",
+    "body": ["for (int i = 0; i < $0; i++) {", "    /* code here */ ", "}"],
+    "description": "Creates a for loop that runs for a certain number if iterations"
+  }
+}
