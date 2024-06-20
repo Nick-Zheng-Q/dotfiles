@@ -136,5 +136,20 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-host_ip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
-export ALL_PROXY="socks5://$host_ip:7890"
+export NEMU_HOME=/home/nick/ysyx-workbench/nemu
+export AM_HOME=/home/nick/ysyx-workbench/abstract-machine
+export PATH=/home/nick/loong/loongson-gnu-toolchain/bin/:$PATH
+export CHIPLAB_HOME=/home/nick/loong/chiplab
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVBOARD_HOME=/home/nick/ysyx-workbench/nvboard
+export NPC_HOME=/home/nick/ysyx-workbench/npc
+export PATH="$PATH:/home/nick/.local/share/coursier/bin"
+export PATH="$PATH:/home/nick"
+export PATH="/usr/lib/ccache:$PATH"
+export PATH="/usr/class/bin:$PATH"
+# >>> xmake >>>
+test -f "/home/nick/.xmake/profile" && source "/home/nick/.xmake/profile"
+# <<< xmake <<<

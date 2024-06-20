@@ -4,3 +4,6 @@
 [filesystem "N/A|20-internal|/dev/sdc"]
 	timestampResolution = 97759 nanoseconds
 	minRacyThreshold = 15095 microseconds
+[filesystem "Ubuntu|11.0.14.1|/dev/sdc"]
+	timestampResolution = 3000 nanoseconds
+	minRacyThreshold = 16693 microseconds

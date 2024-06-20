@@ -1,7 +1,25 @@
 <application>
   <component name="ActionsLocalSummary">
+    <e n="CompileDirty">
+      <i c="4" l="1706426550726" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="8" l="1706426758112" />
+    </e>
+    <e n="EditorEnter">
+      <i c="1" l="1706426602097" />
+    </e>
+    <e n="EditorIncreaseFontSizeGlobal">
+      <i c="7" l="1706426512080" />
+    </e>
     <e n="EditorPaste">
       <i c="1" l="1680705907423" />
+    </e>
+    <e n="ShowSettings">
+      <i c="2" l="1706427859080" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1706426418283" />
     </e>
   </component>
 </application>

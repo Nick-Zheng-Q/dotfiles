@@ -2,35 +2,55 @@
   <component name="NotRoamableUiSettings">
     <option name="presentationModeIdeScale" value="1.75" />
   </component>
-  <component name="PropertyService"><![CDATA[{
-  "keyToString": {
-    "CWM_LOGGING_VERSION": "1",
-    "NonModalCommitCustomization.IsApplied": "true",
-    "ask.about.ctrl.y.shortcut.v2": "true",
-    "bundled.plugins.list.saved.version": "IU-231.8109.175",
-    "evlsprt3.231": "23",
-    "experimental.ui.first.promotion.localdate": "2023-04-05",
-    "fileTypeChangedCounter": "1",
-    "fontSizeToResetConsole": "13.0",
-    "fontSizeToResetEditor": "13.0",
-    "input.method.disabler.muted": "true",
-    "migrated.non.roamable.values.from.general.settings": "true",
-    "previousColorScheme": "_@user_Darcula",
-    "tasks.pass.word.conversion.enforced": "true"
+  <component name="PropertyService">{
+  &quot;keyToString&quot;: {
+    &quot;CWM_LOGGING_VERSION&quot;: &quot;1&quot;,
+    &quot;InstalledPluginsSearchHistory&quot;: &quot;scala&quot;,
+    &quot;MarketplacePluginsSearchHistory&quot;: &quot;scala\nsca\nsc\nscla\ns&quot;,
+    &quot;NonModalCommitCustomization.IsApplied&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.se.text.search&quot;: &quot;true&quot;,
+    &quot;appcds.runOnSecondStart&quot;: &quot;IU-231.8109.175-143049d2794a60a33e8dd409acfdb3bcca2e7787becfcaf5a348cbda0567c7ea&quot;,
+    &quot;ask.about.ctrl.y.shortcut.v2&quot;: &quot;true&quot;,
+    &quot;build.toolwindow.Build Output.selection.state&quot;: &quot;com.intellij.build.BuildTreeConsoleView&quot;,
+    &quot;bundled.plugins.list.saved.version&quot;: &quot;IU-231.8109.175&quot;,
+    &quot;evlsprt3.231&quot;: &quot;23&quot;,
+    &quot;experimental.ui.first.promotion.localdate&quot;: &quot;2023-04-05&quot;,
+    &quot;fileTypeChangedCounter&quot;: &quot;1&quot;,
+    &quot;fontSizeToResetConsole&quot;: &quot;13.0&quot;,
+    &quot;fontSizeToResetEditor&quot;: &quot;13.0&quot;,
+    &quot;gotit.previous.run&quot;: &quot;IU-231.8109.175&quot;,
+    &quot;ide.memory.adjusted&quot;: &quot;true&quot;,
+    &quot;input.method.disabler.muted&quot;: &quot;true&quot;,
+    &quot;installed.kotlin.plugin.version&quot;: &quot;231-1.8.20-IJ8109.175&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nick/ysyx-workbench/npc/playground&quot;,
+    &quot;migrate.android.sdk.path.to.roamable.storage&quot;: &quot;false&quot;,
+    &quot;migrated.non.roamable.values.from.general.settings&quot;: &quot;true&quot;,
+    &quot;previousColorScheme&quot;: &quot;_@user_Darcula&quot;,
+    &quot;registry.to.advanced.settings.migration.build&quot;: &quot;IU-231.8109.175&quot;,
+    &quot;tasks.pass.word.conversion.enforced&quot;: &quot;true&quot;,
+    &quot;ts.lib.d.ts.version&quot;: &quot;4.8.4&quot;
   },
-  "keyToStringList": {
-    "fileTypeDetectors": [
-      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
-      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
-      "com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector",
-      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
-      "com.intellij.database.vfs.DbStorageFileType$Detector",
-      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
-      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
-      "com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector",
-      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
-      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+  &quot;keyToStringList&quot;: {
+    &quot;file.chooser.recent.files&quot;: [
+      &quot;/home/nick/ysyx-workbench/npc/playground&quot;
+    ],
+    &quot;fileTypeDetectors&quot;: [
+      &quot;com.intellij.ide.scratch.ScratchFileServiceImpl$Detector&quot;,
+      &quot;com.intellij.docker.dockerFile.DockerFileTypeDetector&quot;,
+      &quot;com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector&quot;,
+      &quot;com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector&quot;,
+      &quot;com.intellij.database.vfs.DbStorageFileType$Detector&quot;,
+      &quot;com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector&quot;,
+      &quot;com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector&quot;,
+      &quot;com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector&quot;,
+      &quot;com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector&quot;,
+      &quot;org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector&quot;
     ]
+  }
+}</component>
+  <component name="ShownTips"><![CDATA[{
+  "shownTips": {
+    "CtrlW": 1706427848292
   }
 }]]></component>
 </application>
