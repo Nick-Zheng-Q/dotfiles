@@ -153,3 +153,4 @@ export PATH="/usr/class/bin:$PATH"
 # >>> xmake >>>
 test -f "/home/nick/.xmake/profile" && source "/home/nick/.xmake/profile"
 # <<< xmake <<<
+export PATH=/home/nick/loong/la32-tool/loongarch32-toolchain/bin:$PATH
