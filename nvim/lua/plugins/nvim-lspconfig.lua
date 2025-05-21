@@ -4,9 +4,6 @@ return {
 		{ "j-hui/fidget.nvim", opts = {} },
 	},
 	config = function()
-		-- Load LSP config
-		local lspconfig = require("lspconfig")
-
 		-- Keybindings when LSP attaches to a buffer local on_attach = function(client, bufnr)
 		local opts = { buffer = bufnr }
 		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
@@ -14,17 +11,29 @@ return {
 		vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 		--------------------------------------- -- Language Server Configurations -- -------------------------------------
 		-- Lua --
-		lspconfig.lua_ls.setup({
+		vim.lsp.enable("lua_ls")
+		vim.lsp.config("lua_ls", {
 			on_attach = on_attach,
 			settings = {
 				Lua = {
 					runtime = { version = "LuaJIT" }, -- Use LuaJIT diagnostics = { globals = { "vim" } }, -- Ignore "vim" global warnings workspace = { checkThirdParty = false }, -- Disable workspace checks telemetry = { enable = false },
+					hint = { enable = true },
+					diagnostics = {
+						globals = {
+							"vim",
+							"require",
+						},
+					},
+					workspace = {
+						library = vim.api.nvim_get_runtime_file("", true),
+					},
 				},
 			},
 		})
 
 		-- Python
-		lspconfig.pyright.setup({
+		vim.lsp.enable("pyright")
+		vim.lsp.config("pyright", {
 			on_attach = on_attach,
 			settings = {
 				python = {
@@ -32,25 +41,38 @@ return {
 						typeCheckingMode = "basic", -- or "strict"
 						autoSearchPaths = true,
 						useLibraryCodeForTypes = true,
+						hint = { enable = true },
 					},
 				},
 			},
 		})
 
-		lspconfig.clangd.setup({
+		-- clangd --
+		vim.lsp.enable("clangd")
+		vim.lsp.config("clangd", {
 			on_attach = on_attach,
-			settings = {},
+			settings = {
+				hint = { enable = true },
+			},
 		})
 
-		lspconfig.nixd.setup({
+		vim.lsp.enable("nixd")
+		vim.lsp.config("nixd", {
 			on_attach = on_attach,
 		})
 
-		lspconfig.verible.setup({
+		vim.lsp.enable("verible")
+		vim.lsp.config("verible", {
 			on_attach = on_attach,
 			root_dir = function()
 				return vim.uv.cwd()
 			end,
+		})
+		vim.lsp.config("rust_analyzer", {
+			-- Server-specific settings. See `:help lsp-quickstart`
+			settings = {
+				["rust-analyzer"] = {},
+			},
 		})
 
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -122,6 +144,7 @@ return {
 				--
 				-- When you move your cursor, the highlights will be cleared (the second autocommand).
 				local client = vim.lsp.get_client_by_id(event.data.client_id)
+				vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 				if
 					client
 					and client_supports_method(

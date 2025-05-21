@@ -26,7 +26,7 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 font-family = Maple Mono NF
-font-size = 15
+font-size = 20
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -53,6 +53,8 @@ clipboard-read = allow
 clipboard-write = allow
 
 # keybinds
+keybind = ctrl+w>o=new_window
+keybind = ctrl+w>q=close_window
 keybind = ctrl+t>o=new_tab
 keybind = ctrl+t>q=close_tab
 keybind = ctrl+t>h=previous_tab
