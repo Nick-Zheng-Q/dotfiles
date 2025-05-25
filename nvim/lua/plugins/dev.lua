@@ -1,6 +1,6 @@
 return {
 	{
-		dir = "~/Workspace/plugins/digital.nvim/",
+		dir = "~/Workspace/plugins/VeriSuite.nvim/",
 		config = function()
 			require("digital")
 		end,

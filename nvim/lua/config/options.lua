@@ -29,3 +29,9 @@ vim.opt.scrolloff = 10
 vim.schedule(function()
 	vim.opt.clipboard = "unnamedplus"
 end)
+
+vim.filetype.add({
+	extension = {
+		v = "verilog",
+	},
+})

@@ -39,7 +39,8 @@ map("n", "<leader>`", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 map({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save File" })
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
-map("n", "<leader>c", "<cmd>bd<cr>", { desc = "Close this buffer" })
+map("n", "<leader>cc", "<cmd>bdelete<cr>", { desc = "Close this buffer" })
+-- map("n", "<leader>ct", "<cmd>bdelete<cr>", { desc = "Close this buffer" })
 
 -- lsp
 map("n", "gl", function()

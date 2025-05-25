@@ -56,17 +56,22 @@ return {
 			},
 		})
 
-		vim.lsp.enable("nixd")
-		vim.lsp.config("nixd", {
-			on_attach = on_attach,
-		})
+		-- vim.lsp.enable("nixd")
+		-- vim.lsp.config("nixd", {
+		-- 	on_attach = on_attach,
+		-- })
 
 		vim.lsp.enable("verible")
 		vim.lsp.config("verible", {
 			on_attach = on_attach,
-			root_dir = function()
-				return vim.uv.cwd()
-			end,
+			settings = {
+				verilog = {
+					hint = { enable = true },
+				},
+			},
+			-- root_dir = function()
+			-- 	return vim.uv.cwd()
+			-- end,
 		})
 		vim.lsp.config("rust_analyzer", {
 			-- Server-specific settings. See `:help lsp-quickstart`
@@ -75,6 +80,7 @@ return {
 			},
 		})
 
+		vim.lsp.enable("jdtls")
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
 			callback = function(event)
