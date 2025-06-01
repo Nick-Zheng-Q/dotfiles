@@ -33,5 +33,6 @@ end)
 vim.filetype.add({
 	extension = {
 		v = "verilog",
+		flex = "lex",
 	},
 })
